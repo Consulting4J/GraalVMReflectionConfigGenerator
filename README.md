@@ -1,7 +1,7 @@
 # GraalVMReflectionConfigGenerator  
 To help to generate the most complex part reflect-config.json which graalvm native image build needed  
-if you use native-image-agent to track your application to generate the models your app need, you may have to build a very complex script  
-with this helper you just put all the model class name in a list and save as an file, then something like the following would be generated automatically.  
+if you use native-image-agent to track your application to generate the config your app need, you may have to build a very complex script to go through everything.  
+With this helper you could just put all the model class name in a file, then something like the following would be generated automatically.  
 
 
 {  
