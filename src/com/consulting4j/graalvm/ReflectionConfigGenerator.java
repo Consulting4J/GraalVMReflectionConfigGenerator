@@ -16,11 +16,11 @@ public class ReflectionConfigGenerator {
 			String className = line.substring(0, line.length() - 5);
 			StringBuffer sb = new StringBuffer();
 			sb.append("{").append("\n");
-			sb.append("  \"name\":\"" + "com.triples.model." + className + "\", ").append("\n");
+			sb.append("  \"name\":\"" + "com.abc.model." + className + "\", ").append("\n");
 			sb.append("  \"allDeclaredFields\":true,").append("\n");
 			sb.append("  \"allPublicMethods\":true,").append("\n");
 			sb.append("\"fields\":[").append("\n");
-			Class<?> clazz = Class.forName("com.triples.model." + className);
+			Class<?> clazz = Class.forName("com.abc.model." + className);
 			Field[] fields = clazz.getDeclaredFields();
 			List<Field> real = new ArrayList<>();
 			for (int i = 0; i < fields.length; i++) {
